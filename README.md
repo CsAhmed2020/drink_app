@@ -1,4 +1,4 @@
-# new_app
+# Drink App
 
 A new Flutter project.
 ![](https://github.com/CsAhmed2020/drink_app/blob/master/screenshot/Screenshot_20221206_002418_com.example.new_app.jpg)
