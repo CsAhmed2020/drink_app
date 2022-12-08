@@ -102,7 +102,6 @@ class CheckoutScreen extends StatelessWidget {
                   Container(
                     height: 60,
                     alignment: Alignment.bottomCenter,
-                    decoration: BoxDecoration(color: Colors.black),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
@@ -119,22 +118,22 @@ class CheckoutScreen extends StatelessWidget {
                               style: Theme.of(context)
                                   .textTheme
                                   .headline3!
-                                  .copyWith(color: Colors.white),
+                                  .copyWith(color: Colors.black),
                             ),
                           ),
                         ),
                         IconButton(
                           onPressed: () {},
-                          icon: Icon(
+                          icon: const Icon(
                             Icons.arrow_forward,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         )
                       ],
                     ),
                   ),
 
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
 
                   Text('Order Summary',
                       style: Theme.of(context).textTheme.headline3

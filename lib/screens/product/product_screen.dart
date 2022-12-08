@@ -134,7 +134,7 @@ class ProductScreen extends StatelessWidget {
                children: [
                  ListTile(
                    title: Text(
-                     'csahmed.98.20@gmail.com csahmed.98.20@gmail.com csahmed.98.20@gmail.com csahmed.98.20@gmail.com csahmed.98.20@gmail.com',
+                     product.description,
                        style: Theme.of(context)
                            .textTheme.bodyText1
                    ),
@@ -154,7 +154,7 @@ class ProductScreen extends StatelessWidget {
               children: [
                 ListTile(
                   title: Text(
-                      'csahmed.98.20@gmail.com  csahmed.98.20@gmail.com csahmed.98.20@gmail.com csahmed.98.20@gmail.com csahmed.98.20@gmail.com csahmed.98.20@gmail.com',
+                      product.description,
                       style: Theme.of(context)
                           .textTheme.bodyText1
                   ),

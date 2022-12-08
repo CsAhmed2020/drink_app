@@ -46,7 +46,7 @@ class GooglePay extends StatelessWidget {
         onPaymentResult: onGooglePayResult,
         paymentItems: _paymentItems,
         type: GooglePayButtonType.pay,
-        margin: const EdgeInsets.only(top: 10),
+        margin: const EdgeInsets.symmetric(vertical: 10),
         loadingIndicator: const CircularProgressIndicator(),
       ),
     );

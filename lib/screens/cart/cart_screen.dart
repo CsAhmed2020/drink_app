@@ -21,9 +21,8 @@ class CartScreen extends StatelessWidget {
     return Scaffold(
       appBar: const CustomAppBar(title: 'Cart'),
       bottomNavigationBar: BottomAppBar(
-        color: Colors.black,
         child: SizedBox(
-          height: 70,
+          height: 50,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [

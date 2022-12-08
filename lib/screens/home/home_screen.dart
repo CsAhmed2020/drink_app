@@ -22,7 +22,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context){
     return   Scaffold(
-      appBar: const CustomAppBar(title: 'E-Commerce App'),
+      appBar: const CustomAppBar(title: 'Drink App'),
       bottomNavigationBar: const CustomNavBar(screen: routeName),
       body: SingleChildScrollView(
         child: Column(

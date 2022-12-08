@@ -38,6 +38,7 @@ class CartProductCard extends StatelessWidget {
                   product.name,
                   style: Theme.of(context).textTheme.headline5,
                 ),
+                const SizedBox(width: 10),
                 Text(
                   '${product.price} L.E',
                   style: Theme.of(context).textTheme.headline6,

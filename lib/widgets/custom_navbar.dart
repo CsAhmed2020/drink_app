@@ -27,10 +27,22 @@ class CustomNavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
     return BottomAppBar(
-      color: Colors.black,
       child: Container(
-        height: 70,
+        margin: EdgeInsets.symmetric(vertical: screenWidth * 0.02,horizontal: screenWidth * 0.05),
+        height: screenWidth * .150,
+        decoration: BoxDecoration(
+          color: Colors.black,
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withOpacity(.1),
+              blurRadius: 30,
+              offset: Offset(0, 10),
+            ),
+          ],
+          borderRadius: BorderRadius.circular(50),
+        ),
         child:(screen == '/product')
             ? AddToCartNavBar(product: product!)
             : (screen == '/cart')

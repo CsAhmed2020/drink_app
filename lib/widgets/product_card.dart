@@ -65,7 +65,7 @@ class ProductCard extends StatelessWidget {
     Key? key,
     required this.product,
     this.quantity,
-    this.widthFactor = 2.25,
+    this.widthFactor = 2.0,
     this.height = 80,
     this.isCatalog = false,
     this.isWishlist = false,
@@ -335,19 +335,17 @@ class ProductBackground extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: adjWidth - 10,
-      height: 80,
-      margin: const EdgeInsets.only(bottom: 5),
+      width: adjWidth,
+      height: 50,
       alignment: Alignment.bottomCenter,
-      decoration: BoxDecoration(color: Colors.black.withAlpha(50)),
+      decoration: BoxDecoration(color: Colors.black.withAlpha(70)),
       child: Container(
-        width: adjWidth - 20,
-        height: 70,
-        margin: const EdgeInsets.only(bottom: 5),
+        width: adjWidth,
+        height: 60,
         alignment: Alignment.bottomCenter,
-        decoration: BoxDecoration(color: Colors.black),
+        decoration: BoxDecoration(color: Colors.transparent),
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(5.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [...widgets],

@@ -8,6 +8,7 @@ class Product extends Equatable {
   final double price;
   final bool isRecommended;
   final bool isPopular;
+  final String description;
 
   const Product({
     required this.name,
@@ -15,7 +16,8 @@ class Product extends Equatable {
     required this.imageUrl,
     required this.price,
     required this.isRecommended,
-    required this.isPopular
+    required this.isPopular,
+    required this.description
 
 });
 
@@ -26,7 +28,8 @@ class Product extends Equatable {
     imageUrl,
     price,
     isRecommended,
-    isPopular
+    isPopular,
+    description
   ];
 
   static Product fromSnapshot (DocumentSnapshot snap) {
@@ -36,7 +39,8 @@ class Product extends Equatable {
         imageUrl: snap['imageUrl'],
         price: snap['price'],
         isRecommended: snap['isRecommended'],
-        isPopular: snap['isPopular']
+        isPopular: snap['isPopular'],
+        description: snap['description']
     );
     return product;
   }
@@ -53,6 +57,7 @@ class Product extends Equatable {
       price: 2.99,
       isRecommended: true,
       isPopular: false,
+      description: ""
     ),
     const Product(
       /*id: '2',*/
@@ -63,6 +68,7 @@ class Product extends Equatable {
       price: 2.99,
       isRecommended: false,
       isPopular: true,
+      description: ""
     ),
     const Product(
      /* id: '3',*/
@@ -73,6 +79,7 @@ class Product extends Equatable {
       price: 2.99,
       isRecommended: true,
       isPopular: true,
+      description: ""
     ),
     const Product(
       /*id: '4',*/
@@ -83,6 +90,7 @@ class Product extends Equatable {
       price: 2.99,
       isRecommended: true,
       isPopular: false,
+      description: ""
     ),
     const Product(
       /*id: '5',*/
@@ -93,6 +101,7 @@ class Product extends Equatable {
       price: 2.99,
       isRecommended: false,
       isPopular: false,
+      description: ""
     ),
     const Product(
       /*id: '6',*/
@@ -103,6 +112,7 @@ class Product extends Equatable {
       price: 2.99,
       isRecommended: true,
       isPopular: false,
+        description: ""
     ),
     const Product(
       /*id: '7',*/
@@ -113,6 +123,7 @@ class Product extends Equatable {
       price: 2.99,
       isRecommended: false,
       isPopular: true,
+        description: ""
     ),
     const Product(
       /*id: '8',*/
@@ -123,6 +134,7 @@ class Product extends Equatable {
       price: 2.99,
       isRecommended: true,
       isPopular: true,
+        description: ""
     ),
     const Product(
       /*id: '9',*/
@@ -133,6 +145,7 @@ class Product extends Equatable {
       price: 2.99,
       isRecommended: true,
       isPopular: false,
+        description: ""
     ),
     const Product(
       /*id: '10',*/
@@ -143,6 +156,7 @@ class Product extends Equatable {
       price: 2.99,
       isRecommended: false,
       isPopular: false,
+        description: ""
     ),
     const Product(
       /*id: '11',*/
@@ -153,6 +167,7 @@ class Product extends Equatable {
       price: 2.99,
       isRecommended: true,
       isPopular: false,
+        description: ""
     ),
     const Product(
       /*id: '12',*/
@@ -163,6 +178,7 @@ class Product extends Equatable {
       price: 2.99,
       isRecommended: false,
       isPopular: true,
+        description: ""
     ),
     const Product(
       /*id: '13',*/
@@ -173,6 +189,7 @@ class Product extends Equatable {
       price: 2.99,
       isRecommended: true,
       isPopular: true,
+        description: ""
     ),
     const Product(
       /*id: '14',*/
@@ -183,6 +200,7 @@ class Product extends Equatable {
       price: 2.99,
       isRecommended: false,
       isPopular: false,
+        description: ""
     ),
   ];
 
