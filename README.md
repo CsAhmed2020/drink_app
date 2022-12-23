@@ -1,6 +1,6 @@
 # Drink App
 
-A new Flutter project.
+Flutter e-commerce drink app.
 ![](https://github.com/CsAhmed2020/drink_app/blob/master/screenshot/Screenshot_20221206_002418_com.example.new_app.jpg)
 
 ## App Screens
